@@ -8,7 +8,7 @@ function App() {
         <Calculator />
       </div>
       <footer>
-        Open-sourced {" "}
+        Open-source {" "}
         <a href="https://github.com/madpine/calculator-app" target="_blank">code</a> by Maddie Pine
       </footer>
     </div>
