@@ -9,7 +9,7 @@ function App() {
       </div>
       <footer>
         Open-source {" "}
-        <a href="https://github.com/madpine/calculator-app" target="_blank">code</a> by Maddie Pine
+        <a href="https://github.com/madpine/calculator-app" target="_blank" rel="noreferrer">code</a> by Maddie Pine
       </footer>
     </div>
   );

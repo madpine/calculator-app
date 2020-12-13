@@ -1,0 +1,27 @@
+.digit-col {
+  padding: 0;
+  margin: 2px 0;
+}
+
+.digit-button {
+  background: #ca6680;
+  border: 1px solid #ca6680;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 10px 45px;
+}
+
+.one {
+  padding: 10px 46.5px;
+}
+
+.decimal {
+  padding: 10px 49px;
+}
+
+.clear {
+  padding: 10px 44px;
+}

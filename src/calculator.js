@@ -1,4 +1,5 @@
 import React from 'react';
+import Digits from './Digits';
 import './App.css';
 
 export default function Calculator() {
@@ -15,7 +16,7 @@ export default function Calculator() {
                     <div className="col-8">
                         <div className="card digit-card">
                             <div className="card-body digit-body">
-                                {`Digits`}
+                                <Digits />
                             </div>
                         </div>
                     </div>
