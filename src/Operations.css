@@ -1,0 +1,31 @@
+.operations-col {
+  padding: 0;
+  margin: 2px 0;
+}
+
+.operations-button {
+  background: #efd1d9;
+  border: 1px solid #efd1d9;
+  border-radius: 4px;
+  color: #ca6680;
+  display: block;
+  font-size: 35px;
+  margin: 0 auto;
+  padding: 12px 23px;
+}
+
+.add {
+  padding: 12px 20px;
+}
+
+.multiply {
+  padding: 12px 22px;
+}
+
+.divide {
+  padding: 12px 20px;
+}
+
+.equal {
+  padding: 13px 56px;
+}
