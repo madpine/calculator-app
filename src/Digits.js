@@ -2,47 +2,54 @@ import React from 'react';
 import './Digits.css';
 
 export default function Digits() {
+    function handleDigit(event) {
+        event.preventDefault()
+        console.log(event.target.attributes[1].value);
+    }
+
     return (
         <div className="digits">
             <div className="row">
                 <div className="col-4 digit-col">
-                    <button className="digit-button one">1</button>
+                    <button className="digit-button one" value={1} onClick={handleDigit}>
+                        1
+                    </button>
                 </div>
                 <div className="col-4 digit-col">
-                    <button className="digit-button two">2</button>
+                    <button className="digit-button two" value={2} onClick={handleDigit}>2</button>
                 </div>
                 <div className="col-4 digit-col">
-                    <button className="digit-button three">3</button>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-4 digit-col">
-                    <button className="digit-button four">4</button>
-                </div>
-                <div className="col-4 digit-col">
-                    <button className="digit-button five">5</button>
-                </div>
-                <div className="col-4 digit-col">
-                    <button className="digit-button six">6</button>
+                    <button className="digit-button three" value={3} onClick={handleDigit}>3</button>
                 </div>
             </div>
             <div className="row">
                 <div className="col-4 digit-col">
-                    <button className="digit-button seven">7</button>
+                    <button className="digit-button four" value={4} onClick={handleDigit}>4</button>
                 </div>
                 <div className="col-4 digit-col">
-                    <button className="digit-button eight">8</button>
+                    <button className="digit-button five" value={5} onClick={handleDigit}>5</button>
                 </div>
                 <div className="col-4 digit-col">
-                    <button className="digit-button nine">9</button>
+                    <button className="digit-button six" value={6} onClick={handleDigit}>6</button>
                 </div>
             </div>
             <div className="row">
                 <div className="col-4 digit-col">
-                    <button className="digit-button zero">0</button>
+                    <button className="digit-button seven" value={7} onClick={handleDigit}>7</button>
                 </div>
                 <div className="col-4 digit-col">
-                    <button className="digit-button decimal">.</button>
+                    <button className="digit-button eight" value={8} onClick={handleDigit}>8</button>
+                </div>
+                <div className="col-4 digit-col">
+                    <button className="digit-button nine" value={9} onClick={handleDigit}>9</button>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-4 digit-col">
+                    <button className="digit-button zero" value={0} onClick={handleDigit}>0</button>
+                </div>
+                <div className="col-4 digit-col">
+                    <button className="digit-button decimal" value="." onClick={handleDigit}>.</button>
                 </div>
                 <div className="col-4 digit-col">
                     <button className="digit-button clear">C</button>
