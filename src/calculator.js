@@ -1,5 +1,6 @@
 import React from 'react';
 import Digits from './Digits';
+import Operations from './Operations';
 import './App.css';
 
 export default function Calculator() {
@@ -21,9 +22,9 @@ export default function Calculator() {
                         </div>
                     </div>
                     <div className="col-4">
-                        <div className="card function-card">
-                            <div className="card-body function-body">
-                                {`Functions`}
+                        <div className="card operations-card">
+                            <div className="card-body operations-body">
+                                <Operations />
                             </div>
                         </div>
                     </div>
