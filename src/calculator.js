@@ -1,4 +1,5 @@
 import React from 'react';
+import Window from './Window';
 import Digits from './Digits';
 import Operations from './Operations';
 import './App.css';
@@ -9,7 +10,7 @@ export default function Calculator() {
             <div className="card-body calculator-body">
                 <div className="card window-card">
                     <div className="card-body window">
-                        {`Window`}
+                        <Window />
                     </div>
                 </div>
                 
