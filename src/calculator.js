@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Window from './Window';
 import Digits from './Digits';
 import Operations from './Operations';
 import './App.css';
 
 export default function Calculator() {
+    const [number, setNumber] = useState(0);
+
+    function numberChanged(value) {
+        console.log(value);
+        setNumber(value);
+    }
+
     return (
         <div className="card calculator-card">
             <div className="card-body calculator-body">
                 <div className="card window-card">
                     <div className="card-body window">
-                        <Window />
+                        <Window number={number}/>
                     </div>
                 </div>
                 
@@ -18,7 +25,7 @@ export default function Calculator() {
                     <div className="col-8">
                         <div className="card digit-card">
                             <div className="card-body digit-body">
-                                <Digits />
+                                <Digits onNumberChange={numberChanged}/>
                             </div>
                         </div>
                     </div>
